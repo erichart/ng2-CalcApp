@@ -1,0 +1,45 @@
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">Eric Hart's Angular2 Calculator</a>
+        </div>
+    </nav>
+</header>
+
+<div class="jumbotron">
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <p class="form-control-static"> {{formula}}</p>
+            </div>
+        </div>
+    </form>
+
+    <button (click)="append('0')">0</button>
+    <button (click)="append('1')">1</button>
+    <button (click)="append('2')">2</button>
+    <button (click)="append('3')">3</button>
+    <button (click)="append('4')">4</button>
+    <button (click)="append('5')">5</button>
+    <button (click)="append('6')">6</button>
+    <button (click)="append('7')">7</button>
+    <button (click)="append('8')">8</button>
+    <button (click)="append('9')">9</button>
+    <button (click)="append('.')">.</button>
+    <button (click)="append('+')">+</button>
+    <button (click)="append('-')">-</button>
+    <button (click)="append('*')">*</button>
+    <button (click)="append('/')">/</button>
+    <button (click)="append('(')">(</button>
+    <button (click)="append(')')">)</button>
+    <button (click)="evaluate()">=</button>
+    <button (click)="clearEntry()">CE</button>
+    <button (click)="clear()">C</button>
+
+
+</div>
+
+<footer>
+
+</footer>
